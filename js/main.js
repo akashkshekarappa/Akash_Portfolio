@@ -286,6 +286,18 @@
 		})
 	};
 
+	/*--/ Star Typed /--*/
+	if ($('.text-slider').length == 1) {
+    var typed_strings = $('.text-slider-items').text();
+		var typed = new Typed('.text-slider', {
+			strings: typed_strings.split(','),
+			typeSpeed: 100,
+			loop: true,
+			backDelay: 2100,
+			backSpeed: 150
+		});
+	}
+	
 	// Document on load.
 	$(function(){
 		fullHeight();
